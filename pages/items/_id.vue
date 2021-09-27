@@ -110,6 +110,7 @@ export default {
         totalPrice: this.totalPrice
       };
       this.cartSubmitted = true;
+      this.$store.commit("addToCart", formOutput);
     }
   }
 };
